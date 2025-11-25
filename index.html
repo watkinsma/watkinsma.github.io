@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange, Purple & Black Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+   /* Color Palette: 
+   Black: #000000
+   Orange: #FFA500
+   Purple: #800080
+*/
 
+body {
+    /* Gradient background: Black -> Orange -> Purple (kept as requested) */
+    background: linear-gradient(to right, #000000, #FFA500, #800080);
+    /* Fallback color for very old browsers */
+    background-color: #000000; 
+    
+    color: #ffffff; /* White text for contrast */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Ensure the gradient covers the whole page height */
+    min-height: 100vh; 
+}
+
+header {
+    background-color: rgba(128, 0, 128, 0.7); /* Semi-transparent purple for readability */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #FFA500; /* Orange border for accent */
+}
+
+h1, h2 {
+    color: #FFA500; /* Orange color for headings */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark gray */
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav li a:hover {
+    background-color: #FFA500; /* Orange on hover */
+    color: black;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent black for content sections */
+    border-radius: 5px;
+}
+
+#about {
+    background-color: rgba(43, 0, 43, 0.9); /* Semi-transparent dark purple for about section */
+}
+
+footer {
+    background-color: rgba(128, 0, 128, 0.8); /* Semi-transparent purple for footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+ 
+</style>
+    <header>
+        <h1>Welcome to the Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <!-- Link opens Coolmathgames.com in a new tab -->
+            <li><a href="www.coolmathgames.com" target="_blank">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the main content area of the homepage. Clicking the "Home" link in the navigation will now open Coolmathgames.com in a new tab.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Learn more about our mission and team. This section uses a purple accent for contrast.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 diddy blud</p>
+    </footer>
+</body>
+</html>
